@@ -13,7 +13,7 @@ Your default-bot is able to join matches in the cloud and locally. When you run 
 
 The bot has to be uploaded for it to be able to participate in tournaments or matches against other bots.
 
-Deploying is as easy as running make publish from the commandline. Make sure you have put your API-key in the Makefile.
+Deploying is as easy as running `make publish` from the commandline. Make sure your bot's API-key is present in the Makefile.
 
 # bot.conf
 
