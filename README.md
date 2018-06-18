@@ -1,6 +1,6 @@
 ## Onitama Starterbot for DotnetCore
 
-#Getting started
+# Getting started
 
     Register your bot on https://botchallenge.intern.infi.nl/
     Copy the API key and paste it in Program.cs and the Makefile
