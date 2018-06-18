@@ -1,15 +1,18 @@
 ## Onitama Starterbot for DotnetCore
 
 # Getting started
-
-    Register your bot on https://botchallenge.intern.infi.nl/
+    Clone or fork this repository
+    Create an account on https://botchallenge.intern.infi.nl/
+    Create a bot for the Onitama game
     Copy the API key and paste it in Program.cs and the Makefile
 
 # Running your bot
 
-Your default-bot is able to join matches in the cloud and locally. When you run your bot in your IDE / from the commandline it will automatically join a remote match.
+With this starter bot you can join a game right away. When you run your bot locally, it will automatically connect to the remote server and join a match. You will play against a version of this bot every time.
 
-The bot has to be uploaded for it to be able to participate in tournaments or matches against other bots.
+Once you've created a bot and uploaded a published version of your code to it, you will be able to schedule matches against other published bots on the website. 
+
+Each match that is ran will be able to be replayed visually from the matches overview.
 
 # Publishing your bot on MacOS / Linux
 
@@ -19,7 +22,10 @@ Deploying is as easy as running `make publish` from the commandline. Make sure y
 
 # Publishing your bot on Windows:
 
-Ask a colleague with a proper OS to publish your bot.
+We created a powershell script that will do the publishing and zipping for you. 
+    Run publish.ps1 in powershell (you can find the script in this repo).
+Once we saw the amount of effort needed to simply send a request with a attached file to an endpoint with Powershell, we decided it is also very easy to do this manually. 
+You will have to manually upload the zipped files in the edit bot page on the website. Once you upload new files, the old ones disappear.
 
 # bot.conf
 
