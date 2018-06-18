@@ -17,7 +17,7 @@ publish: build upload
 	
 upload:
 	@echo Publishing your bot...
-	curl -X POST -Ffile=@./publish/build.zip http://botchallenge.intern.infi.nl/api/upload/bot/$(APIKEY)
+	curl -X POST -Ffile=@./publish/build.zip https://botchallenge.intern.infi.nl/api/upload/bot/$(APIKEY)
     
 build: 
 	dotnet publish -c Release -o ./publish
