@@ -9,11 +9,17 @@
 
 Your default-bot is able to join matches in the cloud and locally. When you run your bot in your IDE / from the commandline it will automatically join a remote match.
 
-# Deploying your bot on MacOS / Linux
-
 The bot has to be uploaded for it to be able to participate in tournaments or matches against other bots.
 
+# Publishing your bot on MacOS / Linux
+
+Requirements: `dotnet`, `make` and `zip`. 
+
 Deploying is as easy as running `make publish` from the commandline. Make sure your bot's API-key is present in the Makefile.
+
+# Publishing your bot on Windows:
+
+Ask a colleague with a proper OS to publish your bot.
 
 # bot.conf
 
