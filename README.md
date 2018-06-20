@@ -3,10 +3,11 @@
 # Getting started
  - Clone or fork this repository
  - Create an account on https://botchallenge.intern.infi.nl/
- - Create a bot for the Onitama game
+ - Create a bot for the Onitama game on https://botchallenge.intern.infi.nl/bots/create
  - Copy the API key and paste it in Program.cs and the Makefile
+ - You can now start your first match!
 
-# Running your bot
+# Starting a match
 
 With this starter bot you can join a game right away. When you run your bot locally, it will automatically connect to the remote server and join a match. You will play against a version of this bot every time.
 
