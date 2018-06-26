@@ -20,7 +20,7 @@ upload:
 	curl --insecure -X POST -Ffile=@./publish/build.zip https://botchallenge.intern.infi.nl/api/upload/bot/$(APIKEY)
     
 build: 
-	dotnet publish -c Release -o ./publish
+	dotnet publish OnitamaTestClient.csproj -c Release -o ./publish
 	cd ./publish && zip -r build.zip *
 
 run:
