@@ -1,7 +1,7 @@
 .PHONY: publish upload
 
 # Also put the API key in Program.cs
-APIKEY := <API_KEY>
+APIKEY := API_KEY
 
 all: help
 
@@ -20,7 +20,7 @@ upload:
 	curl --insecure -X POST -Ffile=@./publish/build.zip https://botchallenge.intern.infi.nl/api/upload/bot/$(APIKEY)
     
 build: 
-	dotnet publish -c Release -o ./publish
+	dotnet publish OnitamaTestClient.csproj -c Release -o ./publish
 	cd ./publish && zip -r build.zip *
 
 run:
