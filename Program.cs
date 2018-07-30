@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Reflection;
 using System.Threading;
 using OnitamaTestClient.Models.Enums;
 using RemoteBotClient;
@@ -6,7 +8,10 @@ using RemoteBotClient;
 namespace OnitamaTestClient
 {
     class Program {
-        private const string ApiKey = "API_KEY";
+        private static readonly string ApiKey = File.ReadAllText(Path.Combine(
+            Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
+            "apikey.txt"
+        )).Trim();
 
         static void Main(string[] args)
         {
