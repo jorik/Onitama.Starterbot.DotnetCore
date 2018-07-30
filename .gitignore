@@ -9,6 +9,7 @@
 *.userosscache
 *.sln.docstates
 
+apikey.txt
 published.zip
 
 # User-specific files (MonoDevelop/Xamarin Studio)

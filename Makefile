@@ -1,7 +1,7 @@
 .PHONY: publish upload
 
-# Also put the API key in Program.cs
-APIKEY := API_KEY
+FILE := apikey.txt
+APIKEY := $(shell cat ${FILE})
 
 all: help
 

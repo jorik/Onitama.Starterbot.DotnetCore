@@ -1,4 +1,4 @@
-$APIKEY = "YOUR_KEY_HERE"
+$APIKEY = (Get-Content ./apikey.txt).Trim()
 
 $sourcePath = ($PSScriptRoot + "/publish")
 $targetPath = ($PSScriptRoot + "/published.zip")
